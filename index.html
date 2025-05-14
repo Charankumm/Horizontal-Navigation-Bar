@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navigation Bar with Background</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      color: #fff;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      display: flex;
+      justify-content: center;
+      padding: 14px 0;
+    }
+
+    nav a {
+      color: #f2f2f2;
+      text-decoration: none;
+      padding: 14px 20px;
+      margin: 0 10px;
+      font-size: 17px;
+      transition: background-color 0.3s, color 0.3s;
+      border-radius: 4px;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+      color: #fff;
+    }
+
+    nav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    .content {
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>Enjoy exploring the content with a stylish background and navigation.</p>
+  </div>
+
+</body>
+</html>
